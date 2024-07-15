@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Signup Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <container class="page-layout">
+      <div class="background">
+        <div class="odin-logo">
+          <img src="imgs/odin-lined.png" />
+          <p>ODIN</p>
+        </div>
+
+        <p class="credit-text" style="margin: 0">
+          Photo by
+          <a
+            href="https://unsplash.com/@sseeker?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Stormseeker</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/photo-of-green-snake-plant-Ws92xzbSris?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Unsplash</a
+          >
+        </p>
+      </div>
+      <div class="right-side">
+        <div class="heading">
+          <h1>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started.
+          </h1>
+          <br />
+          <h1>You <em>know</em> you want to.</h1>
+        </div>
+        <div class="signup-form">
+          <h1>Let's do this!</h1>
+
+          <div class="first_name">
+            <label for="first_name">FIRST NAME</label><br />
+            <input
+              style="width: 300px; height: 24px"
+              type="text"
+              minlength="1"
+              maxlength="40"
+              id="first_name"
+              name="first_name"
+            />
+          </div>
+
+          <div class="last_name">
+            <label for="last_name">LAST NAME</label><br />
+            <input
+              style="width: 300px; height: 24px"
+              type="text"
+              minlength="1"
+              maxlength="40"
+              id="last_name"
+              name="last_name"
+            />
+          </div>
+
+          <div class="user_email">
+            <label for="user_email">EMAIL</label><br />
+            <input
+              style="width: 300px; height: 24px"
+              type="email"
+              id="user_email"
+              name="email"
+            />
+          </div>
+
+          <div class="phone_number">
+            <label for="phone_number">PHONE NUMBER</label><br />
+            <input
+              style="width: 300px; height: 24px"
+              type="tel"
+              min="9"
+              maxlength="14"
+              id="phone_number"
+              name="phone_number"
+            />
+          </div>
+
+          <div class="password">
+            <label for="password">PASSWORD</label><br />
+            <input
+              style="width: 300px; height: 24px"
+              type="password"
+              id="password"
+              minlength="8"
+              maxlength="20"
+              name="password"
+              required
+            />
+            <div id="error-message" class="error-message">
+              *Password must be at least 8 characters long.
+            </div>
+          </div>
+
+          <div class="confirm_pass">
+            <label for="confirm_pass">CONFIRM PASSWORD</label><br />
+            <input
+              style="width: 300px; height: 24px"
+              type="password"
+              minlength="8"
+              maxlength="20"
+              id="confirm_pass"
+              name="confirm_pass"
+              required
+            />
+          </div>
+        </div>
+        <div class="bottom">
+          <button class="btn" type="submit">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </div>
+    </container>
+  </body>
+</html>

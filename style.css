@@ -1,0 +1,289 @@
+.anton-sc-regular {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(235, 235, 235);
+}
+
+.page-layout {
+  display: flex;
+}
+
+/* LEFT SIDE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.background {
+    background-image: url("imgs/stormseeker-Ws92xzbSris-unsplash.jpg");
+    background-size: cover;
+    min-height: 100%;
+    width: 30vw;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.odin-logo {
+    top: 30vh;
+    position: absolute;
+    width: 23vw;
+    display: flex;
+    font-family: "Anton SC", sans-serif;
+    font-size: 5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.356);
+    height: fit-content;
+    
+}
+
+.odin-logo img {
+    height: 200px;
+    padding: 10px 0px ;
+
+}
+
+.odin-logo p {
+    color: white;
+    padding: 0px;
+    margin: 0;
+
+}
+
+
+.background .credit-text {
+    width: 30vw;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.6;
+    font-size: 0.75rem;
+
+   
+    
+}
+
+.background .credit-text a {
+    color: white;  
+}
+
+/* RIGHT SIDE & HEADING ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.right-side {
+  width: 100%;
+}
+.heading {
+  max-width: 900px;
+  margin: 150px 0px 20px 48px;
+}
+
+/* SIGN UP FORM ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.signup-form {
+  background-color: white;
+  box-shadow: 5px 8px 5px #b9b9b984;
+  padding: 32px 48px;
+  margin: 48px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.signup-form h1{
+  grid-column: span 2;
+}
+
+.signup-form div {
+  font-size: 0.85rem;
+  color: rgb(88, 88, 88);
+  font-weight: 500;
+}
+
+.signup-form div input {
+  border: 2px solid lightgrey;
+  border-radius: 6px;
+  margin:6px 0px 0px 0px;
+  padding: 3px;
+  font-size: 1rem;
+
+}
+
+.signup-form div input:focus {
+  border: 2px solid blue;
+  box-shadow: 3px 6px 3px #b9b9b984;
+  outline: none;
+}
+
+.signup-form div input:invalid {
+  border: 2px solid red;
+  
+}
+
+.signup-form div .error-message {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.first_name {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.last_name {
+  grid-area: 2 / 2;
+}
+
+.user_email {
+  grid-row: 3;
+}
+
+.phone_number {
+  grid-row: 3;
+}
+
+.password {
+  grid-row: 4;
+}
+
+.confirm_pass {
+  grid-row: 4;
+}
+
+/* CREAT ACCT BUTTON / LOGIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.bottom {
+  margin: 0px 48px 100px 48px;
+}
+
+.btn {
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(6, 66, 48);
+  border: none;
+  box-shadow: 3px 6px 3px #b9b9b9dc;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.bottom p {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.bottom p > a {
+  color: rgb(6, 66, 48);
+}
+
+
+/*
+
+.bgContainer {
+  position: relative;
+  color: white;
+  height: 100vh;
+}
+
+.bgContainer img {
+  height: 100%;
+  width: auto;
+  z-index: -10;
+  margin: 0;
+}
+
+.bgContainer .credit-text {
+  color: white;
+  position: fixed;
+  bottom: 1rem;
+}
+
+.bgContainer .credit-text a {
+  color: white;
+}
